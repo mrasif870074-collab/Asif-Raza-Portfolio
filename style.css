@@ -24,10 +24,29 @@ a{text-decoration:none;color:inherit}
 .section{padding:100px 0}.section.alt{background:#091827;border-top:1px solid #132b41;border-bottom:1px solid #132b41}
 .section-title{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:8px 0 35px}
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;color:#aebfd0}.about-grid p{border-left:2px solid #244a66;padding-left:20px}
-.skills-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
-.skill{padding:16px;text-align:center;border:1px solid #23435c;border-radius:10px;background:#0b1d30;font-weight:700}
-.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.project-card{position:relative;padding:28px;border:1px solid #24435e;border-radius:15px;background:#0a1a2b}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:24px;
+  align-items:stretch;
+}
+
+.project-card{
+  position:relative;
+  padding:28px;
+  border:1px solid #24435e;
+  border-radius:15px;
+  background:#0a1a2b;
+  display:flex;
+  flex-direction:column;
+}
+
+.project-card a{
+  margin-top:auto;
+  padding-top:20px;
+}
+
 .project-card h3{font-size:22px;margin:15px 0 8px}.project-card p{color:#9fb2c5;min-height:105px}.project-card a{color:#57d6ff;font-weight:800}
 .project-number{color:#57d6ff;font-weight:900}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0}.tags span{font-size:11px;padding:4px 8px;border-radius:20px;background:#122d45;color:#b9eaff}
 .future-note{text-align:center;color:#7890a5;margin-top:28px}
